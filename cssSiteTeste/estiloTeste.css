@@ -1,0 +1,203 @@
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+address {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 40px 25px 20px 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: blue;
+    background-color: rgb(2, 2, 37);
+    border-left: 5px solid steelblue;
+    border-top: 5px solid rgb(89, 165, 228);
+    border-right: 5px solid rgba(70, 131, 180, 0.685);
+    border-bottom: 5px solid rgba(70, 131, 180, 0.568);
+    border-radius: 30px;
+    font-size: 80px;
+}
+
+h2 {
+    color: red;
+    background-color: rgba(255, 1, 1, 0.123);
+    border: 5px dotted firebrick;
+    font-size: 70px;
+}
+
+h3 {
+    color: aqua;
+    border: 5px dashed aquamarine;
+    font-size: 60px;
+}
+
+h4 {
+    color: saddlebrown;
+    border: 5px double rosybrown;
+    font-size: 50px;
+}
+
+h5 {
+    color: rgb(96, 207, 68);
+    border: 5px ridge rgba(96, 207, 68, 0.747);
+    font-size: 40px;
+}
+
+h6 {
+    color: rgb(228, 216, 46);
+    border: 5px groove rgba(202, 199, 32, 0.76);
+    font-size: 30px;
+}
+
+p,
+span,
+blockquote,
+address,
+td,
+li,
+a,
+th,
+table {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px 150px 40px 20px;
+    line-height: 25px;
+    line-height: 40px;
+}
+
+a {
+    color: yellow;
+}
+
+th {
+    color: green;
+}
+
+
+body {
+    background-color: black;
+}
+
+
+.espacamentoTopoInferior {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bordaAmarela {
+    border: 2px dotted yellow;
+}
+
+.invisivel:hover {
+    visibility: hidden;
+}
+
+a.botao1 {
+    background-color: blue;
+    border: 4px solid darkblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.botao1:hover {
+    background-color: rgb(11, 170, 37);
+    padding: 8px;
+    border: 4px solid green;
+}
+
+a.botao2 {
+    border-bottom: 3px solid blueviolet;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+a.botao2:hover {
+    border-bottom: solid green;
+}
+
+a.botao3 {
+    color: white;
+    padding: 3px 2px;
+    text-decoration: none;
+}
+
+a.botao3:hover {
+    border: 4px dashed yellow;
+    border-radius: 10px;
+}
+
+.titulos {
+    text-align: center;
+    margin: 30px 25px 40px 25px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 15px 300px 30px 300px;
+        border-radius: 35px;
+    }
+}
+
+.formatacao {
+    h2 {
+        margin-right: 1170px;
+    }
+}
+
+.elementosCitacao {
+    h2 {
+        margin-top: 20px;
+        margin-right: 1190px;
+    }
+}
+
+.imagens {
+    background-size: cover;
+    background: gray url(../../midia/img/background.jpg) center;
+}
+
+.tabelas {
+    table {
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: rgb(6, 32, 177);
+        border: 2px solid white;
+        color: rgb(0, 255, 0);
+        padding: 5px 20px;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    td {
+        background-color: rgb(4, 4, 219);
+        border: 2px solid white;
+        padding: 5px 20px;
+        text-align: left;
+        padding-left: 30px;
+    }
+}
+
+.iframe {
+    iframe {
+        background-color: white;
+    }
+}

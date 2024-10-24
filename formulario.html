@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é apenas um formulário de teste.">
+    <meta name="keywords" content="formulario, html, programacao">
+    <meta name="author" content="RaphaZ_RZ">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <!-- <form></form> para criar o formulário -->
+    <form>
+        <!-- <label></label> textos para instruir o usuário, for utilizado para aumentar a zona de click -->
+        <label for="campoNome">Nome:</label>
+        <!-- <input id="id" type="tipo" placeholder="textoInicial" required(tornar obrigatório)> para criar campos capaz de receber informações dadas pelo usuário -->
+        <input id="campoNome" type="text" placeholder="Digite seu nome aqui..." required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Digite seu email..." required>
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" placeholder="Digite sua senha..." required>
+        <br><br>
+        <input type="submit" value="Enviar Formulário">
+        <hr>
+
+
+        <h2>Animal de estimação(RadioButtons)</h2>
+        <!-- name="" deve ser igual em todos os botões do mesmo grupo -->
+        <input id="cachorro" type="radio" name="animal" value="Cachorro">
+        <label for="cachorro">Cachorro</label><br><br>
+        <input id="gato" type="radio" name="animal" value="Gato">
+        <label for="gato">Gato</label><br><br>
+        <input id="passarinho" type="radio" name="animal" value="Passarinho">
+        <label for="passarinho">Gato</label>
+        <hr>
+
+
+        <h2>Lista de itens comprados(CheckBox)</h2>
+        <!-- name="" deve ser diferente para cada objeto -->
+        <input id="arroz" type="checkbox" name="arroz" value="Arroz">
+        <label for="arroz">Arroz</label><br><br>
+        <input id="feijao" type="checkbox" name="feijao" value="Feijão">
+        <label for="feijao">Feijão</label><br><br>
+        <input id="batata" type="checkbox" name="batata" value="Batata">
+        <label for="batata">Batata</label>
+        <hr>
+
+
+        <h2>Escolha uma cor(ComboBox)</h2>
+        <!--- <select></select> para abrir a comboBox,  <option></option> para inserir o valor de cada opção -->
+        <select>
+            <option selected disabled value="" >Selecione uma cor...</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="verde">Verde</option>
+        </select>
+        <hr>
+
+
+        <h2>Digite um texto(TextArea)</h2>
+        <!-- <textarea> </textarea> para textos longos -->
+        <textarea rows="4" cols="30">Apenas um texto de exemplo</textarea>
+        <hr>
+
+        
+        <a href="teste.html">Voltar</a>
+    </form>
+</body>
+
+</html>

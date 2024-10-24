@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse site é apenas para testes.">
+    <meta name="keywords" content="teste, html, programacao">
+    <meta name="author" content="RaphaZ_RZ">
+    <title>Primeira página HTML</title>
+
+    <link rel="stylesheet" href="cssSiteTeste/estiloTeste.css">
+    <link rel="stylesheet" href="cssSiteTeste/estiloCSS.css">
+</head>
+
+<body>
+    <div class="seletores espacamentoTopoInferior">
+        <h2>Seletores</h2>
+
+        <p>
+            (tag) {estilização}<br>
+            .(nomeClasse) {estilização}<br>
+            #(idElemento) {estilização}<br>
+            * {estilização} -> universal.
+        </p>
+
+        <p>Os seletores são utilizados para determinar quais elementos HTML serão estilizados.</p>
+    </div>
+    <hr>
+
+
+    <div class="propriedades espacamentoTopoInferior">
+        <h2>Propriedades</h2>
+
+        <p style="margin-bottom: 0px;">
+            height: (altura) - Definir altura do elemento.<br>
+            Width: (largura) - Definir largura do elemento.<br>
+            <br>
+            color: (cor) - Colorir um elemento.<br>
+            <br>
+            background-color: (cor) - Colorir o fundo do elemento.<br>
+            background-image: url(caminhoURL) - Definir uma imagem como background.<br>
+            background-size: (contain/cover) - Repetir imagem até cobrir toda zona ou alterar dimensões da imagem para
+            cobrir toda zona.<br>
+            background-repeat: no-repeat - Não repetir imagem, zonas não preenchidas serão ocupadas pelo
+            background-color.<br>
+            <br>
+            padding-[top, right, bottom, left]: (n)px - Preenchimento no background do texto.<br>
+            border-[top, right, bottom, left]: (alteracoes) - Alterar cada lado da borda do elemento.<br>
+            border-radius: (n)px - Arredondar a borda.<br>
+            margin-[top, right, bottom, left]: (n)px - Criar um espaçando para margem.<br>
+        <div id="margin">
+            Margin
+            <div id="border">
+                Border
+                <div id="padding">
+                    Padding
+                    <div id="elemento">Elemento</div>
+                </div>
+            </div>
+        </div>
+        </p>
+    </div>
+    <hr>
+
+
+    <div class="display espacamentoTopoInferior">
+        <h2>Display</h2>
+
+        <p> O display do tipo bloco ocupa toda largura disponível, iniciam em uma nova
+            linha
+            e podem conter margens, padding e outros elementos blocos ou inline. As principais tags que utilizam este
+            tipo de display são:
+            &lt;h1&gt; a &lt;h6&gt;, &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;section&gt;,
+            &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;blockquote&gt;, &lt;address&gt;, etc.</p>
+        <p style="margin-bottom: 2px;" class="bordaAmarela">SOU UM TEXTO DO TIPO DISPLAY BLOCK</p>
+        <p style="margin-bottom: 2px;" class="bordaAmarela">SEGUNDO TEXTO DO TIPO DISPLAY BLOCK</p>
+        <p class="bordaAmarela">TERCEIRO TEXTO DO TIPO DISPLAY BLOCK</p>
+        <br><br><br>
+
+        <p> O display do tipo em linha ocupa apenas o espaço necessário para seu conteúdo, não iniciam em uma nova linha
+            e podem ser usados dentro de elementos em bloco. As principais tags que utilizam este tipo de display são:
+            &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;, &lt;img&gt;,
+            &lt;label&gt;, &lt;q&gt;, &lt;abbr&gt;, etc.</p>
+        <span style="margin-right: 0px;">SOU UM TEXTO DO TIPO DISPLAY INLINE</span>
+        <span style="margin: 0px">SEGUNDO TEXTO DO TIPO DISPLAY INLINE</span>
+        <span style="margin: 0px;">TERCEIRO TEXTO DO TIPO DISPLAY INLINE</span>
+        <br><br><br>
+
+        <p> Display do tipo bloco em linha combina características de elementos inline e de
+            bloco, permitindo que o
+            elemento seja exibido em linha com outros, mas mantendo a capacidade de definir largura, altura e margens
+            como um bloco. Isso oferece maior controle sobre o layout sem quebrar o fluxo da linha.</p>
+        <div style="display: inline-block; background-color: blue; width: 30%; height: 100px; margin-left: 20px;">
+            conteudo
+        </div>
+        <div class="invisivel" style="display: inline-block; background-color: red; width: 30%; height: 100px;">
+            APONTE PARA OCULTAR
+        </div>
+        <div style="display: inline-block; background-color: green; width: 30%; height: 100px;">
+            conteúdo
+        </div>
+        <br><br><br>
+
+        <p> O display do tipo none oculta o elemento da página sem reservar espaço no layout. O elemento não é
+            renderizado visualmente, nem afeta o fluxo dos outros elementos na página.<br>
+            Para ocultar um elemento se utiliza visibility: hidden.</p>
+        <p style="display: none;">SOU UM TEXTO DO TIPO DISPLAY NONE</p>
+        <a class="invisivel" href="#">Ocultar</a>
+    </div>
+    <hr>
+
+
+    <div class="maxWidth espacamentoTopoInferior">
+        <h2>MaxWidth</h2>
+        <p> O max-width remove a barra de rolagem no site, determina largura máxima.</p>
+        <p class="bordaAmarela"> Conteúdo de 1000px</p>
+        <p class="bordaAmarela" style="max-width: 1000px;"> Conteúdo de no máximo 1000px</p>
+    </div>
+    <hr>
+
+
+    <div class="posicionamento espacamentoTopoInferior">
+        <h2>Posicionamento</h2>
+        <p> position: static - posicionamento padrão<br>
+            position: relative(utilizado para fazer camadas) - permite alterar a posição do elemento em relação a outros
+            elementos ou em relação a sua posição atual.(n)px e z-index: (n) para escolher a camada do objeto.<br>
+            position: fixed(utilizado para números comerciais) - fixar elemento na tela independente da rolagem da
+            tela.<br>
+            position: absolut(conteiner não pode ser estático) - deslocamento é medido a partir do conteiner pai.
+            position: sticky - gruda na tela até a rolagem completa do conteiner pai.
+        </p>
+
+        <div class="container">
+            <div class="div1">Primeira Div</div>
+            <div class="div2">Segunda Div</div>
+            <div class="div3">Terceira Div</div>
+        </div>
+
+        <div class="whats">
+            whats
+        </div>
+    </div>
+    <hr>
+
+    <a class="botao1" href="index.html">Voltar</a>
+</body>
