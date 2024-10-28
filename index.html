@@ -235,8 +235,8 @@
         <p>&lt;video controls poster="thumbnail"&gt;&lt;/video&gt; + &lt;source src="caminhoArquivo"
             type="audio/tipo"&gt; para inserir vídeos.</p>
 
-        <video controls controlsList="nodownload" poster="../midia/img/funny.png" width="300" height="600">
-            <source src="../midia/video/based.mp4" type="video/mp4">
+        <video controls controlsList="nodownload" poster="midia/img/funny.png" width="300" height="600">
+            <source src="midia/video/based.mp4" type="video/mp4">
         </video>
     </div>
     <hr>
@@ -264,4 +264,267 @@
     </div>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- HEAD É VISTO SOMENTE PELO NAVEGADOR-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse site é apenas para testes.">
+    <meta name="keywords" content="teste, html, programacao">
+    <meta name="author" content="RaphaZ_RZ">
+    <title>Primeira página HTML</title>
+
+    <link rel="stylesheet" href="cssSiteTeste/estiloIndex.css">
+</head>
+
+<body>
+    <div class="titulos">
+        <p> Títulos demonstram a relevância de cada texto.<br> <!-- Pula linhas-->
+            Não se deve utilizar pelo tamanhos das letras.
+        </p>
+
+        <h1>Título 1(apenas um h1 por página)</h1>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+    </div>
+    <hr>
+
+
+    <div class="formatacao">
+        <h2>Formatação de textos</h2>
+        <p> &lt;p&gt;&lt;/p&gt; para criar parágrafos, iniciam uma nova linha.<br>
+            &lt;span&gt;&lt;/span&gt; para juntar textos, não iniciam uma nova linha.<br>
+            &lt;b&gt;&lt;/b&gt; para palavras em negrito. Utilizar &lt;strong&gt;&lt;/strong&gt; se o texto
+            for muito relevante.<br>
+            &lt;i&gt;&lt;/i&gt; para palavras em itálico.<br>
+            &lt;i&gt;&lt;/i&gt; para palavras sublinhadas.<br>
+            &lt;small&gt;&lt;/small&gt; para palavras pequenas.<br>
+            &lt;del&gt;&lt;/del&gt; para palavras riscadas.</p>
+
+        <p> Olá, essa é uma palavra em <b>Negrito</b>.<br>
+            É muito importante que você termine esta atividade <strong>até amanhã</strong>.<br>
+            Agora uma palavra em <i>Itálico</i>.<br>
+            Agora uma palavra <u>Sublinhada</u>.<br>
+            Professor Maurício Carvalho.<br>
+            <small>mauricarvalho@gmail.com</small><br>
+            <b><del>R$ 499</del><sup><small>99</small></sup></b> por <b>399<sup><small>99</small></sup></b>.<br>
+            O número é 2<sup>10</sup>.<br>
+        </p>
+    </div>
+    <hr>
+
+
+    <div class="elementosCitacao">
+        <blockquote>Vamos aprender sobre elementos de citação</blockquote>
+
+        <h2>Elementos de citação</h2>
+        <p>
+            &lt;blockquote&gt;&lt;/blockquote&gt; para mencionar trechos do próprio texto.<br>
+            &lt;abbr title="title"&gt;&lt;/abbr&gt; para criar pequenos textos quando o cursor passar por cima do
+            texto.<br>
+            &lt;address&gt;&lt;/address&gt; para endereços. a tag &lt;p&gt; não suporta esse tipo de texto.<br>
+            &lt;cite&gt;&lt;/cite&gt; para citar obras.<br>
+            &lt;q&gt;&lt;/q&gt; para citar frases ditas por outras pessoas.
+        </p>
+
+        <p style="margin-bottom: 0px;">
+            Vamos aprender sobre elementos de citação durante a leitura desse bloco de texto.<br>
+            Estudos de <abbr title="Hyper Text Markup Language">HTML.</abbr></p>
+
+        <p style="margin: 0px; display: inline-block;"> Ele mora no endereço:</p>
+        <address style="margin-left: 0px;">470 R. José Ferraz de Oliveira Silva - SP, 18740-000</address><br>
+
+        <p style="margin-top: 0px;">
+            O filme <cite>Terrifier</cite> com David Howard Thornton. O ator diz <q> Ah, eu sei que ele (Damien Leone)
+                ainda
+                não começou a escrever o roteiro, mas ele definitivamente já anotou algumas ideias.</q>
+        </p>
+    </div>
+    <hr>
+
+
+    <div class="links">
+        <h2>Links</h2>
+        <p>
+            &lt;a href="URL" target="target"&gt;Texto para clicar&lt;/a&gt;.<br>
+            href="URL" caminho absoluto(link direto para um site "https://www.google.com").<br>
+            href="URL" caminho relativo(algum arquivo dentro do código "perfiesSokureplays/sokugameplay.html").<br>
+            target="_blank" para abrir o link em uma nova aba.
+        </p>
+
+        <a class="botao2" href="https://sokureplays.delthas.fr/users/141728" target="sokuIFrame">sokureplays
+            RAPHAZ_RZ</a><span>Para o IFRAME abaixo.</span>
+    </div>
+    <hr>
+
+
+    <div class="imagens">
+        <h2>Imagens</h2>
+        <p>&lt;img src="caminho da imagem" width="largura" height="altura" alt="Descrição da imagem"&gt; (funciona com
+            GIFs).</p>
+
+        <a style="margin: 0;" href="https://sokureplays.delthas.fr/?char2=5" target="sokuIFrame">
+            <img src="midia/img/Kompaku.jpg" width="171" height="240" alt="Youmu Kompaku">
+        </a>
+        <img src="https://fps.cdnpk.net/meta-tags-social/og-fb-logo-en.png?w=1200" width="340" height="300"
+            alt="Imagem capa da FREEP!K">
+        <img id="imagemAleatoria" src="https://picsum.photos/300/440" alt="imagem aleatória">
+    </div>
+    <hr>
+
+
+    <div class="tabelas">
+        <h2>Tabelas</h2>
+        <p> &lt;table&gt;&lt;/table&gt; para criar a tabela.<br>
+            &lt;tr&gt;&lt;/tr&gt; para criar linhas.<br>
+            &lt;th&gt;&lt;/th&gt; para criar título das colunas.<br>
+            &lt;td&gt;&lt;/td&gt; para inserir valores na tabela.</p>
+
+        <table id="doritos">
+            <tr>
+                <th id="produto">Doritos</th>
+                <th id="nutrientes">Quantidade por proporção</th>
+                <th id="valorDiario">% VD(*)</th>
+            </tr>
+            <tr>
+                <td>Valor Energético</td>
+                <td>120k cal = 504kJ</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Carboidratos</td>
+                <td>14,0g</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Açúcares</td>
+                <td>0,0g</td>
+                <td>**</td>
+            </tr>
+            <tr>
+                <td>Proteínas</td>
+                <td>1,3g</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Gorduras Totais</td>
+                <td>6,3g</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Gorduras Saturadas</td>
+                <td>2,6g</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Gorduras Trans</td>
+                <td>0,0g</td>
+                <td>**</td>
+            </tr>
+            <tr>
+                <td>Fibra Alimentar</td>
+                <td>0,0g</td>
+                <td>**</td>
+            </tr>
+            <tr>
+                <td>Sódio</td>
+                <td>123mg</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+
+
+    <div class="listas">
+        <h2>Listas</h2>
+        <p> &lt;ul&gt;&lt;/ul&gt; para criar listas não ordenadas.<br>
+            &lt;ol&gt;&lt;/ol&gt; para criar listas ordenadas.<br>
+            &lt;li&gt;&lt;/li&gt; para inserir valor nas listas<br>
+
+        <ul>
+            <li>Feijão.</li>
+            <li>Arroz.</li>
+            <li>Macarrão.</li>
+            <li>Melância.</li>
+            <li>Waffles.</li>
+        </ul>
+
+        <ol>
+            <li>Pegar caneca.</li>
+            <li>Despejar o leite na caneca.</li>
+            <li>Misturar com achocolatado em pó.</li>
+            <li>Esquentar mistura por 45 segundos no forno micro-ondas.</li>
+        </ol>
+    </div>
+    <hr>
+
+
+    <div class="iframe">
+        <h2>IFrame</h2>
+        <p>&lt;iframe src="caminho da imagem" name="id" width="largura" height="altura"&gt;&lt;/iframe&gt; para criar
+            janelas.</p>
+
+        <iframe src="" name="sokuIFrame" width="500" height="450"></iframe><br>
+        <iframe src="listas.html" width="500" height="450"></iframe><br>
+        <iframe src="https://www.youtube.com/embed/448sdzWsnMs?si=Y3cpVph9ZIboj-L-" width="500" height="300"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    <hr>
+
+
+    <div class="audio">
+        <h2>Áudio</h2>
+        <p>&lt;audio controls&gt;&lt;/audio&gt; + &lt;source src="caminhoArquivo" type="audio/tipo"&gt; para inserir
+            áudios.</p>
+
+        <audio controls controlsList="nodownload">
+            <source src="midia/audio/teste.m4a" type="audio/mpeg">
+        </audio>
+    </div>
+    <hr>
+
+
+    <div class="video">
+        <h2>Vídeo</h2>
+        <p>&lt;video controls poster="thumbnail"&gt;&lt;/video&gt; + &lt;source src="caminhoArquivo"
+            type="audio/tipo"&gt; para inserir vídeos.</p>
+
+        <video controls controlsList="nodownload" poster="midia/img/funny.png" width="300" height="600">
+            <source src="midia/video/based.mp4" type="video/mp4">
+        </video>
+    </div>
+    <hr>
+
+
+    <div class="css">
+        <h2>CSS</h2>
+        <a class="botao3" href="css.html">CSS</a>
+    </div>
+    <hr>
+
+
+    <div class="semantico">
+        <h2>HTML Semântico</h2>
+        <a class="botao3" href="semantico.html">HTML SEMÂNTICO</a>
+    </div>
+    <hr>
+
+
+    <div class="formulario">
+        <h2>Formulário</h2>
+        <a class="botao3" href="formulario.html">Formulário</a>
+    </div>
+</body>
 </html>

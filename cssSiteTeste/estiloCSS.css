@@ -1,3 +1,6 @@
+/*TODO
+ARRUMAR RESOLUÇÕES*/
+
 #margin {
     position: relative;
     display: inline-block;
@@ -5,7 +8,6 @@
     width: 200px;
     height: 150px;
     text-align: center;
-    margin-left: 20px;
     padding: 8px;
 }
 
@@ -35,6 +37,11 @@
     margin-left: 12px;
 }
 
+
+.divSemMargem {
+    margin: 0px;
+}
+
 .display {
     p {
         margin-bottom: 0px;
@@ -45,49 +52,70 @@
     }
 }
 
-.maxWidth {
-    p {
-        width: 1000px;
-        margin-bottom: 10px;
-    }
-}
-
 .container {
+    overflow: visible;
     position: relative;
     display: inline-block;
     background-color: blue;
-    width: 70%;
+    border: 5px solid red;
+    width: 50%;
     height: 400px;
+
+    img {
+        float: left;
+        margin-right: 5px;
+    }
+
+    p {
+        margin-right: 5px;
+    }
+}
+
+.container2 {
+    overflow: auto;
+    position: relative;
+    display: inline-block;
+    background-color: blue;
+    border: 5px solid red;
+    width: 50%;
+    height: 400px;
+
+    img {
+        float: left;
+        margin-right: 5px;
+    }
+
+    p {
+        margin-right: 5px;
+    }
+}
+
+.div1,
+.div2,
+.div3 {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
 }
 
 .div1 {
     position: relative;
-    left: 50px;
     z-index: 2;
-    display: inline-block;
     background-color: yellow;
-    width: 30%;
-    height: 100px;
 }
 
 .div2 {
     position: sticky;
     top: 0px;
     z-index: 3;
-    display: inline-block;
     background-color: pink;
-    width: 30%;
-    height: 100px;
 }
 
 .div3 {
     position: absolute;
     top: 40%;
-    right: 40%;
-    display: inline-block;
+    right: 5%;
     background-color: red;
-    width: 30%;
-    height: 100px;
 }
 
 .whats {
@@ -99,3 +127,114 @@
     width: 80px;
     height: 80px;
 }
+
+.visibility,
+.hidden,
+.scroll,
+.auto {
+    background-color: rgba(255, 255, 255, 0.116);
+    width: 100%;
+    height: 100px;
+}
+
+.hidden {
+    overflow: hidden;
+    margin: 120px 20px 50px 0px;
+}
+
+.scroll {
+    overflow: scroll;
+    margin-bottom: 40px;
+}
+
+.auto {
+    overflow: auto;
+    height: 200px;
+}
+
+#fade1 {
+    max-width: 1000px;
+    height: 400px;
+    background-image: linear-gradient(to top right, blue, red);
+}
+
+#fadeRedondo {
+    max-width: 1000px;
+    height: 400px;
+    background-image: radial-gradient(blue, red);
+}
+
+#sombreado {
+    text-shadow: 2px 3px 3px rgb(0, 162, 255);
+}
+
+#multiplasSombras {
+    text-shadow: 2px 3px 3px rgb(0, 162, 255),
+        0px 0px 4px rgb(0, 255, 98),
+        -2px -2px 2px rgb(252, 61, 61);
+}
+
+#caixaSombreada {
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0px rgba(171, 217, 255, 0.486),
+        4px 5px 0px rgba(80, 49, 255, 0.24);
+
+    h5 {
+        margin: 10px 5px;
+    }
+
+    p {
+        height: 100%;
+        color: black;
+        font-size: 15px;
+        line-height: 15px;
+        margin: 5px;
+    }
+}
+
+#caixaSombreada:hover {
+    white-space: normal;
+    height: auto;
+
+    .reduzido {
+        white-space: normal;
+    }
+}
+
+.reduzido {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Smartphones*/
+@media only screen and (max-width: 640px) {
+    .overflow {
+        span {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos)*/
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+        .overflow {
+        span {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+}
+
+/*Dispostivos Médios (Tablets deitados)*/
+@media only screen and (min-width: 769px) and (max-width: 992px) {}
+
+/* Dispostivos Largos (laptops/desktops)*/
+@media only screen and (min-width: 993px) and (max-width: 1200px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1201px) {}
