@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse site é apenas para testes.">
+    <meta name="keywords" content="teste, html, programacao">
+    <meta name="author" content="RaphaZ_RZ">
+    <title>Primeira página HTML</title>
+
+    <link rel="stylesheet" href="cssSiteTeste/estiloIndex.css">
+    <link rel="stylesheet" href="cssSiteTeste/estiloCSS.css">
+</head>
+
+<body>
+    <div class="seletores bordaAmarela">
+        <h2>Seletores</h2>
+        <p>
+            (tag) {estilização}<br>
+            .(nomeClasse) {estilização}<br>
+            #(idElemento) {estilização}<br>
+            * {estilização} -> universal.
+        </p>
+
+        <p>Os seletores são utilizados para determinar quais elementos HTML serão estilizados.</p>
+    </div>
+    <hr>
+
+
+    <div class="especificidades bordaAmarela">
+        <h2>Especificidades</h2>
+        <p>
+            CSS incorporado direto na tag é sempre mais forte.<br>
+            O último valor adicionado será sempre o efetivo em caso de seletores iguais.<br>
+            !important para dar prioridade máxima a uma propriedade.<br>
+            <br>
+            1° Identificadores.<br>
+            2° Classes.<br>
+            3° Seletores simples.<br>
+            <br>
+            1° Estilização diretamente na tag.<br>
+            2° Incorporada na página.<br>
+            3° Arquivo exterior.<br>
+        </p>
+
+        <p>Os seletores são utilizados para determinar quais elementos HTML serão estilizados.</p>
+    </div>
+    <hr>
+
+
+    <div class="propriedades bordaAmarela">
+        <h2>Propriedades Gerais</h2>
+
+        <p style="margin-bottom: 0px;">
+            width: (largura) - Definir largura do elemento.<br>
+            height: (altura) - Definir altura do elemento.<br>
+            max-[width/height] - Definir largura ou altura máxima de um elemento.<br>
+            min-[width/height] - Definir largura ou altura mínima de um elemento.<br>
+            <br>
+            text-align: (alinhamento).<br>
+            text-direction: (direcionamento) - Definir direcionamento do texto(esquerda para direita, etc).<br>
+            text-decoration: (decoração) - Definir decoração do texto(sublinhado, linha cortando, etc).<br>
+            text-transform: (transformação) - Definir transformação do texto(todas letras maiúsculas, minúsculas,
+            etc).<br>
+            text-ident: (identação) - Definir tamanho do parágrafo.<br>
+            letter-spacing: (espaçoEntreLetras).<br>
+            word-spacing: (espacçoEntrePalavras).<br>
+            line-height: (alturaEntreLinhas).<br>
+            <br>
+
+            font-family: (tipoFonte).<br>
+            font-size: (tamanhoFonte).<br>
+            font-style: (estilo) - Definir estilo(italico, obliquo, etc).<br>
+            font-weight: (espessuraFonte).<br>
+            <br>
+
+            color: (cor) - Colorir um texto.<br>
+            opacity: (opacidade) - Definir opacidade de um elemento[0.0 até 1.0 quanto maior mais opaco] <br>
+            <br>
+
+            background-color: (cor) - Colorir o fundo do elemento.<br>
+            background-image: url(caminhoURL) - Definir uma imagem como background.<br>
+            background-size: (contain/cover) - Repetir imagem até cobrir toda zona ou alterar dimensões da imagem para
+            cobrir toda zona.<br>
+            background-repeat: no-repeat - Não repetir imagem, zonas não preenchidas serão ocupadas pelo
+            background-color.<br>
+            <br>
+
+            padding-[top, right, bottom, left]: (n)px - Preenchimento no background do texto.<br>
+            border-[top, right, bottom, left]: (alteracoes) - Alterar cada lado da borda do elemento.<br>
+            border-radius: (n)px - Arredondar a borda.<br>
+            margin-[top, right, bottom, left]: (n)px - Criar um espaçando para margem.<br>
+        <div id="margin" class="divSemMargem">
+            Margin
+            <div id="border" class="divSemMargem">
+                Border
+                <div id="padding" class="divSemMargem">
+                    Padding
+                    <div id="elemento" class="divSemMargem">Elemento</div>
+                </div>
+            </div>
+        </div>
+        </p>
+    </div>
+    <hr>
+
+
+    <div class="display bordaAmarela">
+        <h2>Display</h2>
+
+        <p> O display do tipo bloco ocupa toda largura disponível, iniciam em uma nova
+            linha
+            e podem conter margens, padding e outros elementos blocos ou inline. As principais tags que utilizam este
+            tipo de display são:
+            &lt;h1&gt; a &lt;h6&gt;, &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;section&gt;,
+            &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;blockquote&gt;, &lt;address&gt;, etc.</p>
+        <p style="margin-bottom: 2px;" class="bordaAmarela">SOU UM TEXTO DO TIPO DISPLAY BLOCK</p>
+        <p style="margin-bottom: 2px;" class="bordaAmarela">SEGUNDO TEXTO DO TIPO DISPLAY BLOCK</p>
+        <p class="bordaAmarela">TERCEIRO TEXTO DO TIPO DISPLAY BLOCK</p>
+        <br><br><br>
+
+        <p> O display do tipo em linha ocupa apenas o espaço necessário para seu conteúdo, não iniciam em uma nova linha
+            e podem ser usados dentro de elementos em bloco. As principais tags que utilizam este tipo de display são:
+            &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;b&gt;, &lt;i&gt;, &lt;img&gt;,
+            &lt;label&gt;, &lt;q&gt;, &lt;abbr&gt;, etc.</p>
+        <span style="margin-right: 0px;">SOU UM TEXTO DO TIPO DISPLAY INLINE</span>
+        <span style="margin: 0px">SEGUNDO TEXTO DO TIPO DISPLAY INLINE</span>
+        <span style="margin: 0px;">TERCEIRO TEXTO DO TIPO DISPLAY INLINE</span>
+        <br><br><br>
+
+        <p> Display do tipo bloco em linha combina características de elementos inline e de
+            bloco, permitindo que o
+            elemento seja exibido em linha com outros, mas mantendo a capacidade de definir largura, altura e margens
+            como um bloco. Isso oferece maior controle sobre o layout sem quebrar o fluxo da linha.</p>
+        <div class="divSemMargem"
+            style="color: white; display: inline-block; background-color: blue; width: 30%; height: 100px; vertical-align: middle;">
+            conteudo
+        </div>
+        <div class="invisivel divSemMargem"
+            style="color: white; display: inline-block; background-color: red; width: 30%; height: 100px; vertical-align: middle;">
+            APONTE PARA OCULTAR
+        </div>
+        <div class="divSemMargem"
+            style="color: white; display: inline-block; background-color: green; width: 30%; height: 100px; vertical-align: middle;">
+            conteúdo
+        </div>
+        <br><br><br>
+
+        <p> O display do tipo none oculta o elemento da página sem reservar espaço no layout. O elemento não é
+            renderizado visualmente, nem afeta o fluxo dos outros elementos na página.<br>
+            Para ocultar um elemento se utiliza visibility: hidden.</p>
+        <p style="display: none;">SOU UM TEXTO DO TIPO DISPLAY NONE</p>
+        <a class="invisivel" href="#">Ocultar</a>
+    </div>
+    <hr>
+
+
+    <div class="posicionamento bordaAmarela">
+        <h2>Posicionamento</h2>
+        <p> position: static - posicionamento padrão<br>
+            position: relative(utilizado para fazer camadas) - permite alterar a posição do elemento em relação a outros
+            elementos ou em relação a sua posição atual.(n)px e z-index: (n) para escolher a camada do objeto.<br>
+            position: fixed(utilizado para números comerciais) - fixar elemento na tela independente da rolagem da
+            tela.<br>
+            position: absolut(conteiner não pode ser estático) - deslocamento é medido a partir do conteiner pai.
+            position: sticky - gruda na tela até a rolagem completa do conteiner pai.
+        </p>
+
+        <div class="container divSemMargem">
+            <div class="div1 divSemMargem">Primeira Div</div>
+            <div class="div2 divSemMargem">Segunda Div</div>
+            <div class="div3 divSemMargem">Terceira Div</div>
+        </div>
+
+        <div class="whats">
+            whats
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="overflow bordaAmarela">
+        <h2>Overflow</h2>
+        <p>
+            overflow: visible - Exibir todo conteúdo presente no elemento visível.<br>
+            overflow: hidden - Exibir apenas o conteúdo que se encaixa na dimensão do elemento.<br>
+            overflow: scroll - Exibir barra de rolagem o conteúdo que se encaixa na dimensão do elemento.<br>
+            overflow: auto - Exibir o scroll do conteúdo apenas se necessário.<br>
+        </p>
+
+        <div class="visibility divSemMargem">
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis at liliberobero temporibliberous
+                voluptates! voluptates libero voluptatesnumquam exercitationem exercitationem
+                Rem, nisi sequi voluptates voluptatesnumquam sunt qui libero unde est repellat eniliberom voluptates
+                reprehenderit eius nliberoemo exercitationem exercitationem
+                exercitationem liberoquis. Incidunt exceliberopturi veniam commodi perfliberoerendis
+                perspiciatis voluptas exercitationem nisi sequi voluptates voluptatesnumquam sunt qui libero unde est
+                repellat eniliberom voluptates reprehenderit eius nliberoemo exercitationem exercitationem
+                exercitationem liberoquis. sapiente accusamus vitlibvoluptateseroae temporibus dolore harum enim sit
+                voluptatum, similique sequi iste ut exercitationem iste.</span>
+        </div>
+        <div class="hidden divSemMargem">
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis at liliberobero temporibliberous
+                voluptates! voluptates libero voluptatesnumquam exercitationem exercitationem
+                Rem, nisi sequi voluptates voluptatesnumquam sunt qui libero unde est repellat eniliberom voluptates
+                reprehenderit eius nliberoemo exercitationem exercitationem
+                exercitationem liberoquis.Incidunt exceliberopturi veniam commodi perfliberoerendis
+                perspiciatis voluptas exercitationem sapiente accusamus vitlibvoluptateseroae temporibus dolore harum
+                enim sit voluptatum, similique sequi iste ut exercitationem iste.</span>
+        </div>
+        <div class="scroll divSemMargem">
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis at liliberobero temporibliberous
+                voluptates! voluptates libero voluptatesnumquam exercitationem exercitationem
+                Rem, nisi sequi voluptates voluptatesnumquam sunt qui libero unde est repellat eniliberom voluptates
+                reprehenderit eius nliberoemo exercitationem exercitationem
+                exercitationem liberoquis.Incidunt exceliberopturi veniam commodi perfliberoerendis
+                perspiciatis voluptas exercitationem sapiente accusamus vitlibvoluptateseroae temporibus dolore harum
+                enim sit voluptatum, similique sequi iste ut exercitationem iste.</span>
+        </div>
+        <div class="auto divSemMargem">
+            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis at liliberobero temporibliberous
+                voluptates! voluptates libero voluptatesnumquam exercitationem exercitationem
+                Rem, nisi sequi voluptates voluptatesnumquam sunt qui libero unde est repellat eniliberom voluptates
+                reprehenderit eius nliberoemo exercitationem exercitationem
+                exercitationem liberoquis.Incidunt exceliberopturi veniam commodi perfliberoerendis
+                perspiciatis voluptas exercitationem sapiente accusamus vitlibvoluptateseroae temporibus dolore harum
+                enim sit voluptatum, similique sequi iste ut exercitationem iste.</span>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="float bordaAmarela">
+        <h2>Float</h2>
+        <p> No caso abaixo estou utilizando a propriedade float na tag imagem. O elemento que está com a propriedade
+            float se desprende do container.<br>
+            Utilizar clear:both para limpar os floats anteriores.
+        </p>
+
+        <div class="container2 bordaAmarela">
+            <img src="midia/img/funny.png" width="50%" height="100%" alt="planoDeFundo">
+            <p> Faz com que um elemento 'flutue' sobre a página, a imagem está a esquerda do container.<br>
+                Todo texto digitado aqui será posicionado a direita da imagem.
+            </p>
+            <h3 style="clear:both">OUTRO PARÁGRAFO QUE LIMPA A FLUTUAÇÃO</h3><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima veritatis accusamus,
+                adipisci labore ad reprehenderit, et sint soluta, voluptas animi ab eligendi ut aut voluptatem suscipit
+                sit iste fugit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, adipisci at? Sint
+                tempore magni enim similique, officia, amet ex, incidunt repellat ipsum possimus corporis vitae iusto
+                tempora. Iure, ab rem.
+            </p>
+        </div>
+
+    </div>
+    <hr>
+
+
+    <div class="gradiente bordaAmarela">
+        <h2>Fundo gradiente</h2>
+        <p> background-image: linear-gradient(cor1, cor2, ...).<br>
+            linear-gradient(top, right, bottom, left, top right, bottom right, ...) - especificar o direcionamento
+            do gradiente.<br>
+            linear-gradient([n]deg) - especificar o angulação do gradiente.
+            radial-gradient(cor1, cor2, ...) - gradiente circular
+        </p>
+
+        <div id="fade1" class="divSemMargem"></div>
+        <div id="fadeRedondo" class="divSemMargem"></div>
+    </div>
+    <hr>
+
+
+    <div class="shadows bordaAmarela">
+        <h2>Shadows</h2>
+        <p> text-shadow: (sombraHorizontal) (sombraVertical) (blur) (cor). - Sombras em textos.<br>
+            box-shadow: (sombraHorizontal) (sombraVertical) (blur) (cor). - Sombras em divs.
+        </p>
+
+        <span id="sombreado">TESTE DE SOMBRAS</span><br>
+        <span id="multiplasSombras">MULTIPLAS SOBRAS</span>
+        <div id="caixaSombreada" class="divSemMargem">
+            <img src="midia/img/cidade.png" width="100%" height="70%" alt="imagem de uma cidade">
+            <h5 class="reduzido">Isso é um card</h2>
+                <p class="reduzido"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa enim laborum veniam.
+                    Sapiente facilis
+                    quos dolor quidem corporis dolorum! Cum neque quasi dolore nobis tempore voluptates dicta quo saepe?
+                    Consequatur! mum dolor sit amet consectetur adipisicing elit. Ipsa enim laborum veniam. Sapiente
+                    facilis
+                    quos dolor quidem corporis dolorum! Cum neque quasi dolore nobis tempore voluptates dicta quo saepe?
+                    Consequatur! m ipsum dolor sit amet consectetur adipisicing elit. Ipsa enim laborum veniam. Sapiente
+                    facilis quos dolor quidem corporis dolorum! uasi dolore nobis tempore voluptates dicta quo</p>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="mediaQueries bordaAmarela">
+        <h2>Media Queries</h2>
+        <p>Layout adaptável.</p>
+    </div>
+    <hr>
+
+    <a class="botao1" href="index.html">Voltar</a>
+</body>
